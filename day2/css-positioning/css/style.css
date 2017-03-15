@@ -7,5 +7,95 @@ light blue: #1c5380
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  height: 100%;
+  background: linear-gradient(180deg, #1c5380, #06365f 35%, white 35%);
+  margin-top: 50px;
+
+}
+
+#wrapper {
+  width: 100%;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  margin: 30px auto;
+  width: 700px;
+  padding-bottom: 70px;
+}
+
+.nav p {
+  display: inline-block;
+  font-size: 80%;
+  margin: 0 5px;
+  color: #1c5380;
+}
+
+#copyright {
+  color: grey;
+}
+
+.one {
+  width: 500px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.two {
+  padding: 40px;
+  width: 420px;
+  box-shadow: 0px -1px 8px 2px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  background-color: white;
+}
+
+.two h2 {
+  color: #06365f;
+  margin-top: 0;
+}
+
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}
+
+.three img {
+  margin: 0 10px;
+}
+
+#login-button {
+  background-color: #1c5380;
+  border: 1px solid black;
+  float: right;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+#login-button p {
+  margin: 0 auto;
+  margin-left: 5px;
+  font-size: 80%;
+  color: white;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.r-container {
+  width: 500px;
+  float: right;
+}
+
+.l-container {
+  padding: 30px;
 }
