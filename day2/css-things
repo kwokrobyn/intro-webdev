@@ -1,0 +1,66 @@
+____________________________________________________
+clearing floats: add to the containers of floated obj
+-----------------------------------------------------
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+__________________________________________________________
+media queries: mobile first, then build for wider screens.
+_________________________________________________________
+
+@media (min-width: 769px) { // medium sized screens
+
+  .container { // the big boxes. always take up most of screen
+  width: 90%;
+  margin: 0 auto;
+}
+
+  .name, // float your cols left to make a multi col
+  .col {
+  float: left;
+}
+
+  .primary, // take up half the screen
+  .secondary {
+    width: 50%;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+}
+
+}
+
+@media (min-width: 1025px) { // for the widest screens
+  .container {
+    width: 80%;
+    max-width: 1150px; // limits the containers from getting too wide
+}
+
+   .primary {
+    width: 40%;
+}
+
+    .secondary,
+    .tertiary {
+      width: 30%;
+}
+
+}
+_________
+box-sizing
+__________
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

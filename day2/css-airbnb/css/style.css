@@ -1,3 +1,84 @@
+body {
+  background-color: #e6e6e6;
+  font-family: 'Avenir', sans-serif;;
+  color: #323232;
+}
+
 h1 {
   color: salmon;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h3,
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 80%;
+}
+
+.images p {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  float: center;
+  padding: 1em;
+  margin: 0.5em;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+
+}
+
+#sf {background-image: url("../img/san-francisco.jpg");}
+#ny {background-image: url("../img/new-york.jpg");}
+#lon {background-image: url("../img/london.jpg");}
+
+#np {background-image: url("../img/napa.jpg");}
+#sn {background-image: url("../img/sonoma.jpg");}
+#sf2 {background-image: url("../img/san-francisco-2.jpg");}
+
+.images {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.clearfix {
+  /* ---- Float clearfix ---- */
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.button {
+  width: 200px;
+  margin: 30px auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2px solid grey;
+  background-color: white;
+
+}
+
+.button p {
+  margin: 0;
 }
