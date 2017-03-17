@@ -1,0 +1,58 @@
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #FFCE00;
+  color: #262228;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #FFCE00;
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.container ul {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #262228;
+  text-transform: uppercase;
+}
+
+.header li:hover, .header li:hover a{
+  background-color: #262228;
+  color: #FFCE00;
+}
+
+.header li {
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 40%;
+  margin: 10px auto;
+  text-decoration: none;
+  border: 2.5px solid #262228;
+  border-radius: 100px;
+  text-align: center;
+
+}
+
+.main {
+  margin-bottom: 100px;
+  background-color: white;
+  width: 100%;
+}

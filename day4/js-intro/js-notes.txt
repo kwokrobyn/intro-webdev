@@ -1,0 +1,43 @@
+selecting elements
+getElementById, getElementsByTagName, getElementsByClassName
+querySelector(anything!, e.g. tag.class, tag:first-child, [title=label])
+
+selecting text - textContent, innerHTML
+removing child - Node.removeChild(child);
+adding child - Node.appendChild(child);
+
+event listener example:
+
+toggleList.addEventListener('click', () => {
+  if (listDiv.style.display == 'none') {
+    toggleList.textContent = 'Hide List';
+    listDiv.style.display = 'block';
+  } else {
+  toggleList.textContent = 'Show List';
+  listDiv.style.display = 'none';
+  }
+
+});
+
+creating elements: let li = document.createElement('li');
+
+user events
+function say(something) {
+  console.log(something);
+}
+say('Hello');
+
+function exec(func, arg) {
+  func(arg);
+}
+
+// passing in an anon func directly into another func
+exec((something) => {
+  console.log(something);
+}, 'Greetiings');
+
+window.setTimeout((something) => {
+  console.log(something);
+}, 3000, 'Greetings');
+
+// window.setTimeout(func, time, param, param);
